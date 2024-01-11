@@ -1,6 +1,10 @@
 /* Common elements */
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    display: contents;
+    background-color: #f1d1d2;
 }
 a{
     text-decoration: none;
@@ -8,15 +12,21 @@ a{
 
 /* header */
 header{
-    float: right;
     margin: 20px;
+    text-align: right;
 }
-.h-inner a{
-    color: #000;
+header *{
+    color: #fff;
+}
+header a{
     margin-right: 15px;
 }
-.h-inner a:hover{
+header a:hover{
     text-decoration: underline;
+    color: #7d5959;
+}
+header .menu-icon:hover{
+    color: #7d5959;
 }
 
 /* main section */
@@ -38,15 +48,18 @@ header{
     border: 1px solid #dfe1e5;
     padding: 0 40px;
 }
+.input-area input[type="text"]:focus{
+    outline: none;
+}
 .input-area .search-icon{
     position: relative;
     left: 40px;
-    color: #9aa0a6;
+    color: #7d5959;
 }
 .input-area .mic-icon{
     position: relative;
     right: 40px;
-    color: #9aa0a6;
+    color: #7d5959;
 }
 .btn-area button{
     height: 36px;
@@ -57,16 +70,20 @@ header{
     font-family: arial, sans-serif;
     padding: 0 16px;
     margin: 11px 4px;
+    color: #7d5959;
 }
 .btn-area button:hover{
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     background-color: #f8f9fa;
-    border: 1px solid #707070;
-    color: #333;
+    border: 1px solid #c1a3a3;
+    color: #c1a3a3;
+}
+.lan-area span{
+    color: #7d5959;
 }
 .lan-area a{
     padding: 0 3px;
-    color: #1a0dab;
+    color: #fff;
 }
 .lan-area a:hover{
     text-decoration: underline;
@@ -77,21 +94,25 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #faf1f2;
 }
 footer div{
     padding: 15px 30px;
     font-size: 15px;
+    color: #7d5959;
 }
 footer div span a{
-    color: rgba(0, 0, 0, .54);
+    color: #c1a3a3;
 }
 footer div:first-child{
-    border-bottom: 1px solid #dadce0;
+    border-bottom: 1px solid #c1a3a3;
 }
-footer div:last-child span a{
-    padding-left: 15px;
+footer div:last-child span:first-child a{
+    padding-right: 15px;
 }
 footer div:last-child span:last-child{
     float: right;
+}
+footer div:last-child span:last-child a{
+    padding-left: 15px;
 }
