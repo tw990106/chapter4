@@ -104,6 +104,9 @@ footer div{
 footer div span a{
     color: #c1a3a3;
 }
+footer div span a:hover{
+    color: #7d5959;
+}
 footer div:first-child{
     border-bottom: 1px solid #c1a3a3;
 }
