@@ -27,6 +27,7 @@ header a:hover{
 }
 header .menu-icon:hover{
     color: #7d5959;
+    cursor: pointer;
 }
 
 /* main section */
